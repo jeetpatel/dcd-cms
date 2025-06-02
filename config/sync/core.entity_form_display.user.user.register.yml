@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
-    - field.field.user.user.field_bio
     - field.field.user.user.field_code_conduct
     - field.field.user.user.field_country
     - field.field.user.user.field_drupalorg_username
@@ -130,5 +129,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_bio: true
   path: true

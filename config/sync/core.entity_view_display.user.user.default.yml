@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_bio
     - field.field.user.user.field_code_conduct
     - field.field.user.user.field_country
     - field.field.user.user.field_drupalorg_username
@@ -18,20 +17,12 @@ dependencies:
   module:
     - address
     - link
-    - text
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_bio:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 18
-    region: content
   field_code_conduct:
     type: boolean
     label: above
