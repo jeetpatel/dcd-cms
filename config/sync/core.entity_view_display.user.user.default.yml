@@ -30,7 +30,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 13
+    weight: 18
     region: content
   field_code_conduct:
     type: boolean

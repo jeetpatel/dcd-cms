@@ -21,7 +21,6 @@ dependencies:
     - link
     - media_library
     - telephone
-    - text
     - user
 _core:
   default_config_hash: pojsLtV41YIYgWaeuqfl6yG8fsVXhC1iVB7XwKG0nMc
@@ -38,14 +37,6 @@ content:
   contact:
     weight: 5
     region: content
-  field_bio:
-    type: text_textarea
-    weight: 10
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
   field_code_conduct:
     type: boolean_checkbox
     weight: 14
@@ -139,4 +130,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_bio: true
   path: true
