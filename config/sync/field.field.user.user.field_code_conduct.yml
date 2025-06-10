@@ -11,10 +11,12 @@ field_name: field_code_conduct
 entity_type: user
 bundle: user
 label: 'Code of conduct'
-description: ''
+description: 'Are you interested in the Code of conduct?'
 required: true
 translatable: false
-default_value: {  }
+default_value:
+  -
+    value: 0
 default_value_callback: ''
 settings:
   on_label: 'Yes'
