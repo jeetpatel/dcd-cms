@@ -1,4 +1,4 @@
-uuid: b88e1262-0137-4c42-aa0b-850713919da1
+uuid: 0a76a16e-7517-4ac7-9592-0557e79a3c6e
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ field_name: field_organisation
 entity_type: user
 bundle: user
 label: Organisation
-description: 'Enter the Organisation name where you are working.'
+description: ''
 required: false
 translatable: false
 default_value: {  }

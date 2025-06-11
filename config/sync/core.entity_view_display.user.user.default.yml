@@ -3,9 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_bio
     - field.field.user.user.field_code_conduct
     - field.field.user.user.field_country
-    - field.field.user.user.field_drupalorg_username
+    - field.field.user.user.field_drupal_org_username
     - field.field.user.user.field_first_name
     - field.field.user.user.field_last_name
     - field.field.user.user.field_linkedin_url
@@ -17,12 +18,20 @@ dependencies:
   module:
     - address
     - link
+    - text
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_bio:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 24
+    region: content
   field_code_conduct:
     type: boolean
     label: above
@@ -31,22 +40,22 @@ content:
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 16
+    weight: 25
     region: content
   field_country:
     type: address_country_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    weight: 26
     region: content
-  field_drupalorg_username:
+  field_drupal_org_username:
     type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 11
+    weight: 21
     region: content
   field_first_name:
     type: string
@@ -54,7 +63,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 6
+    weight: 18
     region: content
   field_last_name:
     type: string
@@ -62,7 +71,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 7
+    weight: 19
     region: content
   field_linkedin_url:
     type: link
@@ -74,7 +83,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 12
+    weight: 22
     region: content
   field_organisation:
     type: string
@@ -82,7 +91,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 14
+    weight: 23
     region: content
   field_phone:
     type: basic_string
@@ -106,7 +115,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 10
+    weight: 20
     region: content
   field_subscribe:
     type: boolean
@@ -123,4 +132,6 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-hidden: {  }
+hidden:
+  track_team_profiles: true
+  user_profiles: true

@@ -1,11 +1,11 @@
-uuid: b08ffa48-ef78-461e-ae33-bc27c95f1469
+uuid: c1fc3ca1-5c55-4657-8d23-57b9357fbd0a
 langcode: en
 status: true
 dependencies:
   module:
     - user
-id: user.field_drupalorg_username
-field_name: field_drupalorg_username
+id: user.field_drupal_org_username
+field_name: field_drupal_org_username
 entity_type: user
 type: string
 settings:

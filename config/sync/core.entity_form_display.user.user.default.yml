@@ -3,9 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_bio
     - field.field.user.user.field_code_conduct
     - field.field.user.user.field_country
-    - field.field.user.user.field_drupalorg_username
+    - field.field.user.user.field_drupal_org_username
     - field.field.user.user.field_first_name
     - field.field.user.user.field_last_name
     - field.field.user.user.field_linkedin_url
@@ -19,6 +20,7 @@ dependencies:
     - link
     - media_library
     - telephone
+    - text
     - user
 _core:
   default_config_hash: pojsLtV41YIYgWaeuqfl6yG8fsVXhC1iVB7XwKG0nMc
@@ -35,9 +37,17 @@ content:
   contact:
     weight: 5
     region: content
+  field_bio:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_code_conduct:
     type: boolean_checkbox
-    weight: 13
+    weight: 14
     region: content
     settings:
       display_label: true
@@ -48,7 +58,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_drupalorg_username:
+  field_drupal_org_username:
     type: string_textfield
     weight: 8
     region: content
@@ -58,7 +68,7 @@ content:
     third_party_settings: {  }
   field_first_name:
     type: string_textfield
-    weight: 3
+    weight: 2
     region: content
     settings:
       size: 60
@@ -66,7 +76,7 @@ content:
     third_party_settings: {  }
   field_last_name:
     type: string_textfield
-    weight: 4
+    weight: 3
     region: content
     settings:
       size: 60
@@ -97,7 +107,7 @@ content:
     third_party_settings: {  }
   field_photo:
     type: media_library_widget
-    weight: 14
+    weight: 12
     region: content
     settings:
       media_types: {  }
@@ -112,7 +122,7 @@ content:
     third_party_settings: {  }
   field_subscribe:
     type: boolean_checkbox
-    weight: 12
+    weight: 13
     region: content
     settings:
       display_label: true
@@ -123,9 +133,11 @@ content:
     settings: {  }
     third_party_settings: {  }
   timezone:
-    weight: 2
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   path: true
+  track_team_profiles: true
+  user_profiles: true

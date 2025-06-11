@@ -1,16 +1,16 @@
-uuid: cb5a137c-3d0e-4c0d-9cab-4229cfdab055
+uuid: d4004ba6-0f35-4793-ab0c-c889727da7ce
 langcode: en
 status: true
 dependencies:
   module:
-    - address
+    - text
     - user
-id: user.field_country
-field_name: field_country
+id: user.field_bio
+field_name: field_bio
 entity_type: user
-type: address_country
+type: text_long
 settings: {  }
-module: address
+module: text
 locked: false
 cardinality: 1
 translatable: true
