@@ -4,24 +4,8 @@ status: true
 dependencies:
   config:
     - core.entity_form_mode.user.register
-    - field.field.user.user.field_bio
-    - field.field.user.user.field_code_conduct
-    - field.field.user.user.field_country
-    - field.field.user.user.field_drupal_org_username
-    - field.field.user.user.field_first_name
-    - field.field.user.user.field_last_name
-    - field.field.user.user.field_linkedin_url
-    - field.field.user.user.field_organisation
-    - field.field.user.user.field_phone
-    - field.field.user.user.field_photo
-    - field.field.user.user.field_slack_username
-    - field.field.user.user.field_subscribe
   module:
-    - address
-    - link
-    - media_library
-    - telephone
-    - text
+    - profile
     - user
 _core:
   default_config_hash: pojsLtV41YIYgWaeuqfl6yG8fsVXhC1iVB7XwKG0nMc
@@ -38,100 +22,17 @@ content:
   contact:
     weight: 5
     region: content
-  field_bio:
-    type: text_textarea
-    weight: 10
-    region: content
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-  field_code_conduct:
-    type: boolean_checkbox
-    weight: 14
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  field_country:
-    type: address_country_default
-    weight: 6
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_drupal_org_username:
-    type: string_textfield
-    weight: 8
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_first_name:
-    type: string_textfield
-    weight: 2
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_last_name:
-    type: string_textfield
-    weight: 3
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_linkedin_url:
-    type: link_default
-    weight: 9
-    region: content
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-  field_organisation:
-    type: string_textfield
-    weight: 11
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_phone:
-    type: telephone_default
-    weight: 5
-    region: content
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-  field_photo:
-    type: media_library_widget
-    weight: 12
-    region: content
-    settings:
-      media_types: {  }
-    third_party_settings: {  }
-  field_slack_username:
-    type: string_textfield
-    weight: 7
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_subscribe:
-    type: boolean_checkbox
-    weight: 13
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
   language:
     weight: 1
     region: content
     settings: {  }
+    third_party_settings: {  }
+  profile_profiles:
+    type: profile_form
+    weight: 90
+    region: content
+    settings:
+      form_mode: default
     third_party_settings: {  }
   timezone:
     weight: 4

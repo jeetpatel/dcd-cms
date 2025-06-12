@@ -1,12 +1,12 @@
-uuid: b0dbac03-4cdb-4278-8aec-6b8eb77f6c28
+uuid: 1a963cc5-b886-4701-8ce4-d7bfc2616f2b
 langcode: en
 status: true
 dependencies:
   module:
-    - user
-id: user.field_first_name
-field_name: field_first_name
-entity_type: user
+    - profile
+id: profile.field_last_name
+field_name: field_last_name
+entity_type: profile
 type: string
 settings:
   max_length: 255

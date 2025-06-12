@@ -2,136 +2,19 @@ uuid: 9f7c5ca2-5966-414c-bb41-ab0ffd337023
 langcode: en
 status: true
 dependencies:
-  config:
-    - field.field.user.user.field_bio
-    - field.field.user.user.field_code_conduct
-    - field.field.user.user.field_country
-    - field.field.user.user.field_drupal_org_username
-    - field.field.user.user.field_first_name
-    - field.field.user.user.field_last_name
-    - field.field.user.user.field_linkedin_url
-    - field.field.user.user.field_organisation
-    - field.field.user.user.field_phone
-    - field.field.user.user.field_photo
-    - field.field.user.user.field_slack_username
-    - field.field.user.user.field_subscribe
   module:
-    - address
-    - link
-    - text
     - user
 id: user.user.default
 targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_bio:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 24
-    region: content
-  field_code_conduct:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 25
-    region: content
-  field_country:
-    type: address_country_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 26
-    region: content
-  field_drupal_org_username:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 21
-    region: content
-  field_first_name:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 18
-    region: content
-  field_last_name:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 19
-    region: content
-  field_linkedin_url:
-    type: link
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    weight: 22
-    region: content
-  field_organisation:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 23
-    region: content
-  field_phone:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 8
-    region: content
-  field_photo:
-    type: entity_reference_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 17
-    region: content
-  field_slack_username:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 20
-    region: content
-  field_subscribe:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 15
-    region: content
   member_for:
     settings: {  }
     third_party_settings: {  }
     weight: 5
     region: content
 hidden:
+  profile_profiles: true
   track_team_profiles: true
   user_profiles: true

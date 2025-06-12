@@ -1,15 +1,14 @@
-uuid: 80fba8cd-a952-4c5e-9ac9-dbdd412e1e99
+uuid: ab4f79af-c10c-4746-878d-431b3adbe246
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.user.field_last_name
-  module:
-    - user
-id: user.user.field_last_name
+    - field.storage.profile.field_last_name
+    - profile.type.profile
+id: profile.profile.field_last_name
 field_name: field_last_name
-entity_type: user
-bundle: user
+entity_type: profile
+bundle: profile
 label: 'Last Name'
 description: ''
 required: true

@@ -1,12 +1,12 @@
-uuid: 95605728-8856-4e6e-8c7c-fd5543ac4122
+uuid: 4b2bcbcb-53ee-4d3c-a251-949e059819dc
 langcode: en
 status: true
 dependencies:
   module:
-    - user
-id: user.field_organisation
-field_name: field_organisation
-entity_type: user
+    - profile
+id: profile.field_drupal_org_username
+field_name: field_drupal_org_username
+entity_type: profile
 type: string
 settings:
   max_length: 255

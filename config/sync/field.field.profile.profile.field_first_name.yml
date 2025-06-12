@@ -1,15 +1,14 @@
-uuid: ac3b4e4a-375f-4684-a01e-0a63fe289210
+uuid: 429979a5-b83b-41a5-a8cc-c471281af590
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.user.field_first_name
-  module:
-    - user
-id: user.user.field_first_name
+    - field.storage.profile.field_first_name
+    - profile.type.profile
+id: profile.profile.field_first_name
 field_name: field_first_name
-entity_type: user
-bundle: user
+entity_type: profile
+bundle: profile
 label: 'First Name'
 description: ''
 required: true

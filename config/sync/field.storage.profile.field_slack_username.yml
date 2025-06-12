@@ -1,12 +1,12 @@
-uuid: 81587ca6-dd56-43dc-8f33-3aa995e02232
+uuid: 5f5ddf7a-38b1-4d80-8d3f-dad0f90718cf
 langcode: en
 status: true
 dependencies:
   module:
-    - user
-id: user.field_slack_username
+    - profile
+id: profile.field_slack_username
 field_name: field_slack_username
-entity_type: user
+entity_type: profile
 type: string
 settings:
   max_length: 255

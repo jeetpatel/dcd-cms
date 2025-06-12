@@ -1,16 +1,15 @@
-uuid: 90d70917-9418-436f-bd32-786ccc1eca23
+uuid: b6f5cb5c-27d1-4839-bfa6-9190db7960c2
 langcode: en
 status: true
 dependencies:
   module:
-    - link
-    - user
-id: user.field_linkedin_url
-field_name: field_linkedin_url
-entity_type: user
-type: link
+    - profile
+id: profile.field_subscribe
+field_name: field_subscribe
+entity_type: profile
+type: boolean
 settings: {  }
-module: link
+module: core
 locked: false
 cardinality: 1
 translatable: true

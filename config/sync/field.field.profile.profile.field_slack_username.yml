@@ -1,18 +1,17 @@
-uuid: ed403ed6-66f2-451c-b460-633d58b5c52b
+uuid: f076e3c4-18b2-463b-b947-93826a75946f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.user.field_slack_username
-  module:
-    - user
-id: user.user.field_slack_username
+    - field.storage.profile.field_slack_username
+    - profile.type.profile
+id: profile.profile.field_slack_username
 field_name: field_slack_username
-entity_type: user
-bundle: user
+entity_type: profile
+bundle: profile
 label: 'Slack Username'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''

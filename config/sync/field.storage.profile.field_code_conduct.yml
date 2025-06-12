@@ -1,16 +1,15 @@
-uuid: cb5a137c-3d0e-4c0d-9cab-4229cfdab055
+uuid: bb7857f7-35bc-4c85-9822-f3256def92e0
 langcode: en
 status: true
 dependencies:
   module:
-    - address
-    - user
-id: user.field_country
-field_name: field_country
-entity_type: user
-type: address_country
+    - profile
+id: profile.field_code_conduct
+field_name: field_code_conduct
+entity_type: profile
+type: boolean
 settings: {  }
-module: address
+module: core
 locked: false
 cardinality: 1
 translatable: true

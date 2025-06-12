@@ -1,15 +1,14 @@
-uuid: e46a5c32-1ee0-4901-8d68-5bf747960995
+uuid: 966bb2f2-1a5a-4c2f-842e-83f614e6b6dd
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.user.field_subscribe
-  module:
-    - user
-id: user.user.field_subscribe
+    - field.storage.profile.field_subscribe
+    - profile.type.profile
+id: profile.profile.field_subscribe
 field_name: field_subscribe
-entity_type: user
-bundle: user
+entity_type: profile
+bundle: profile
 label: Subscribe
 description: 'Subscribed to our news and update on Mail'
 required: false
